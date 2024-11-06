@@ -1,8 +1,10 @@
-# optional stuff that will clear the window each time you run it.
 import os
 import platform
 
 def clear_screen():
+    """
+    Clears the terminal screen to make it easier to follow along with code.
+    """
     if platform.system() == 'Windows':
         os.system('cls')
     else:
@@ -10,10 +12,11 @@ def clear_screen():
 
 clear_screen()
 
-###########################
-# START READING HERE
-###########################
+# ===============================
+# REVIEW - SINGLE CLASS & OBJECTS
+# ===============================
 
+# 1. MAKE A CLASS AND OBJECTS
 '''
 make a Person class
     Instance variables: name, hobby
@@ -21,10 +24,10 @@ make a Person class
     Methods:
         __init__ (the constructor)
         introduce_yourself
-            print out "hello, my name is name and my hobby is hobby"
+            return "Hello, my name is <name> and my hobby is <hobby>"
 
-Make two Person objects. run the introduce_yourself method on both of them.
-
+Make two Person objects. run the introduce_yourself method on both of them
+and print the result
 '''
 
 class Person: # name of the class
@@ -33,15 +36,10 @@ class Person: # name of the class
         self.hobby = hobby # instance variable
 
     def introduce_yourself(self): # method. Self MUST be a parameter
-        print(f"Hello, my name is {self.name} and my hobby is {self.hobby}") # get to the instance parameters by referencing self.
+        return f"Hello, my name is {self.name} and my hobby is {self.hobby}" # get to the instance parameters by referencing self.
 
 
 person1 = Person("Jim", "Basketball")
 person2 = Person("Jenny", "Cycling")
 
-
-person1.introduce_yourself()
-# if it makes it easier to understand what self is, the above is the same as doing this:
-Person.introduce_yourself(person1)
-
-person2.introduce_yourself()
+print(person1.introduce_yourself())

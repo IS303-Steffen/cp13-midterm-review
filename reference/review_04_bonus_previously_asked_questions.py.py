@@ -1,8 +1,10 @@
-# optional stuff that will clear the window each time you run it.
 import os
 import platform
 
 def clear_screen():
+    """
+    Clears the terminal screen to make it easier to follow along with code.
+    """
     if platform.system() == 'Windows':
         os.system('cls')
     else:
@@ -10,17 +12,22 @@ def clear_screen():
 
 clear_screen()
 
-###########################
-# START READING HERE
-###########################
+# =============================
+# REVIEW - BONUS PAST QUESTIONS
+# =============================
 
-# these are just questions and answers that some people had from previous semesters.
-# you might find some of it useful.
+'''
+This file just contains some past questions that past semesters have asked.
+I would focus on the practice questions in the other files (I curated and gave
+those questions to you for a reason). But you might find these other topics 
+useful to review.
+'''
 
 
-############
-# modulus
-############
+# =======
+# MODULUS
+# =======
+
 '''
 Think of modulus as doing division, and then giving you what is left over.
 
@@ -47,9 +54,9 @@ so the remainder is 2
 result = 17 % 5
 print("modulus:", result)
 
-#################
+# ===============
 # shortcuts += -=
-##################
+# ===============
 
 '''
 There are shortcuts for adding or subtracting (also multiplying, dividing, etc.) anything to an existing  variable
@@ -73,9 +80,9 @@ exampleVariable += 3
 print("with shortcut (its the exact same:", exampleVariable)
 
 
-#####################
+# =============================
 # when to use while, for, or if
-######################
+# =============================
 
 '''
 if is NOT a loop. Only use it if you want to check a condition once.
@@ -121,9 +128,9 @@ often, you can have a for loop or while loop and have it work the same. Generall
 list you need to go through or you ask the user for a specific number of times to do something. Otherwise, just use a while.
 '''
 
-###################
+# =====
 # len()
-###################
+# =====
 '''
 len() just tells you how long things are, like strings, dictionaries and lists
 '''
@@ -135,10 +142,10 @@ print("length of string:", len(exampleString))
 print("length of a list:", len(exampleList))
 print("length of a dictionary:", len(exampleDictionary))
 
-###################
-# randint(1,3) # can give 1, 2, or 3 
-# randrange(1,3) can give 1, or 2
-###################
+
+'''randint(1,3) # can give 1, 2, or 3 
+randrange(1,3) can give 1, or 2'''
+
 
 
 '''
@@ -153,9 +160,9 @@ so randrange(1,2) can give you 1 or 2 randomly.
 Use either one, it doesn't matter, just know how the function behaves so you use it correctly
 
 '''
-#############
+# ==================================
 # try and except, difference between
-###############
+# ==================================
 
 '''
 If you have a try, you must have an except.
