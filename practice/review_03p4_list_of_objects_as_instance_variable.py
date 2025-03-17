@@ -35,7 +35,7 @@ Alter DogPerson's introduce_yourself. If they have at least one dog, say:
 
 Make a DogPerson, and add 3 dogs to their list.
 Make another DogPerson, but don't add any dogs to their list.
-run introduce_yourself on both andn print the result.
+run introduce_yourself on both and print the result.
 '''
 
 class Person: # name of the class
