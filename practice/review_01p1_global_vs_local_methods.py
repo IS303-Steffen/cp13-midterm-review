@@ -55,28 +55,3 @@ away_team = SoccerTeam("U of U", 2, 3, 3, 6)
 
 print(home_team.display_summary_info())
 
-# =================
-# CORRECTED VERSION
-# =================
-
-class SoccerTeam:
-    def __init__(self, team_name, wins, losses, goals_scored, goals_allowed):
-        self.team_name = team_name
-        self.wins = wins
-        self.losses = losses
-        self.goals_scored = goals_scored
-        self.goals_allowed = goals_allowed
-    
-    def display_summary_info(self):
-        total_games_played = self.wins + self.losses
-        return (f"Team Name: {self.team_name}" +
-                f"\nTotal games played: {total_games_played}"
-                f"\nSeason record: {self.wins} - {self.losses}" +
-                f"\nTotal goals scored: {self.goals_scored} - Total goals "
-                f"allowed: {self.goals_allowed}")
-    
-home_team = SoccerTeam("BYU", 3, 2, 6, 2)
-away_team = SoccerTeam("U of U", 2, 3, 3, 6)
-
-print(home_team.display_summary_info())
-print(away_team.display_summary_info())
